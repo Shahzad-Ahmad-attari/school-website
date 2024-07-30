@@ -1,0 +1,390 @@
+* {
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+    align-items: center;
+    padding: 10px 8%;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+    background-color: #fff;
+}
+nav img {
+    width: 90px;
+    height: 60px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    align-items: center;
+    padding: 10px;  
+}
+nav ul li a{
+    color: #1b0238;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+nav .tool-button {
+display: flex;
+align-items: center;
+gap: 32px;
+}
+nav .tool-button a{
+    text-decoration: none;
+    color: #1b0238;
+    border: none;
+    gap: 24px;
+    font-size: 16px;
+    font-weight: 600;
+}
+nav .tool-button a:hover {
+    color: #EA512E;
+    transition: .3s;
+}
+nav .tool-button button {
+    border: none;
+    background-color: #ea512e;
+    border-radius: 8px;
+    color: white;
+    padding: 14px 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+nav .tool-button button:hover {
+    background-color: #de755e;
+    transition: .3s;
+}
+.toolbar {
+    display: none;
+}
+.toolbar span {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.toggler {
+position :relative;
+}
+.toggler a {
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+}
+.toggler a:hover {
+    width: 100%;
+    background-color: #1b0238;
+    color: white;
+}
+.toggler .dropdown {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 250px;
+    top: 46;
+    right: 0;
+    gap: 0;
+    align-items: start;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+.toggler:hover .dropdown {
+    display: flex;
+}
+
+
+
+.about {
+    background-image: url(https://templates.envytheme.com/ketan/default/assets/img/page-banner/page-banner-1.jpg);
+    height: 420px;
+    background-size: cover;
+    position: top;
+    background-attachment: fixed;
+}
+.about>div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.about>h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+.about .hero {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+.about .hero .border-line{
+border: 1px solid #EA512E;
+height: 25px;
+}
+.about .hero a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.about .hero span{
+    color: #EA512E;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+.child-section {
+    display: flex;
+    padding: 80px 5%;
+    gap: 48px;
+    position: relative;
+    background-color: #FFFFFF;
+    height: 100vh;
+}
+.header-2 h2 {
+    color: #EA512E;
+    font-family: "Sacramento", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: bottom;
+}
+.header-2 {
+    padding: 20px 100px;
+}
+.header-2 .title{ 
+    color: #1B0238;
+    font-size: 45px;
+}
+.header-2 .desc {
+    color: #6B6B84;
+    line-height: 24px;
+}
+.child-section .header-2 .list-box {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+    width: 80%;
+}
+.child-section .header-2 .list-box .container button {
+    background: #ea512e;
+    color: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.child-section .header-2 .list-box .container button:hover {
+    background-color: #F5890D;
+}
+.child-section .header-2 .list-box .container {
+    width: 50%;
+}
+.child-section .list-box .container span {
+    color:#1B0238;
+    font-weight: 600;
+}
+.child-section .read-more{
+    border: none;
+    background: #ea512e;
+    padding: 16px 32px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.child-section .read-more:hover {
+    background-color: #F5890D;
+    transition: 0.3s;
+}
+.child-section .read-more:hover {
+    background-color: #F5890D;
+    transition: 0.3s;
+}
+.child-section>button{
+    border: none;
+    background-color: #82b440;
+    padding: 8px 16px;
+    border-radius: 14px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 0px;
+    position: fixed;
+    right: 0px;
+    top: 300px;
+}
+.child-section>button:hover {
+    background-color: #F5890D;
+    transition: 0.3s;
+}
+.single-child {
+    width: 596px;
+    height: 596px;
+    border-radius: 50%;
+}
+
+
+.online-teachers {
+    background-color: #f5f5f5;
+    height: 100vh;
+    border :1px solid black;
+}
+.online-teachers .card-box {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 70px;
+}
+.online-teachers .card-box .card-1{
+    border: 1px solid blue;
+    width:     calc(100% / 3 - 24px)
+}
+.online-teachers .card-box .card-1>span{
+    font-size: 20px;
+    color:  #ea512e;
+    padding: 20px;
+    text-align: center;
+}
+
+.online-teachers .card-box .card-2{
+    border: 1px solid blue;
+    width:  calc(100% / 3 - 24px);
+    background-image: url(https://templates.envytheme.com/ketan/default/assets/img/teacher/teacher-11.jpg);
+    background-size: cover;
+}
+.online-teachers .card-box .card-3{
+    border: 1px solid blue;
+    width:     calc(100% / 3 - 24px);
+    background-image: url(https://images.pexels.com/photos/7521069/pexels-photo-7521069.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+}
+.online-teachers .card-box .card-4{
+    border: 1px solid blue;
+    width:     calc(100% / 4 - 24px);
+    background-image: url(https://images.pexels.com/photos/5212361/pexels-photo-5212361.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+}
+.online-teachers .card-box .card-5{
+    border: 1px solid blue;
+    width:     calc(100% / 3 - 24px);
+    background-image: url(https://images.pexels.com/photos/4412446/pexels-photo-4412446.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+}
+.online-teachers .card-box .card-6{
+    border: 1px solid blue;
+    width:     calc(100% / 3 - 24px)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px)
+{
+    .toolbar {
+        display: flex;
+    }
+
+    .tool-button {
+        display: none;
+    }
+    nav {
+        padding: 10px 16px;
+        position:sticky;
+    }
+    nav ul {
+        display: none;
+    }
+    nav img {
+        width: 100px;
+    }
+    
+    .about {
+        width: 780px;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+
+
+@media(max-width:480px)
+{
+    nav {
+        padding: 10px 8px;
+    }
+    nav ul {
+        display: none;
+    }
+    nav img {
+        width: 70px;
+    }
+    nav .tool-button {
+        display: none;
+        gap: 8px;
+        
+    }
+    nav.tool-button button {
+        display: none;
+        padding: 10px 8px;
+    }
+    nav.tool-button a {
+        display: none;
+        font-size: 14px;
+    }
+    nav.toggler.dropdown {
+        width: 180px;
+    }
+
+    nav .about {
+    width: 100%;
+    }
+    nav .about>div {
+        padding: 16px;
+    }
+    nav .about h1 {
+        font-size: 30px;
+}
+
+
+
+}
